@@ -1,14 +1,9 @@
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import "base/import-base";
 
-@import "components/button";
+@import "components/import-components";
 
-@import "layout/header";
+@import "layout/import-layout";
 
-@import "pages/home";
+@import "pages/import-pages";
 
-@import "utils/functions";
-@import "utils/mixins";
-@import "utils/variables";
+@import "utils/import-utils";
