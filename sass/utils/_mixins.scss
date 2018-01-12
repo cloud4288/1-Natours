@@ -5,3 +5,8 @@
         clear: both;
     }
 }
+
+@mixin horizontal-line {
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
+}
