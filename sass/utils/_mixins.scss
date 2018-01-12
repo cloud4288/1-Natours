@@ -10,3 +10,9 @@
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
 }
+
+@mixin center-horizontal-vertical {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
