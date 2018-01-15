@@ -168,10 +168,10 @@ body {
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
-    position: absolute;
     top: 40%;
     left: 50%;
     text-align: center;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
@@ -240,10 +240,10 @@ body {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
-  position: absolute;
   list-style: none;
   text-align: center;
   width: 100%;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
@@ -546,10 +546,10 @@ body {
     height: 1.3rem;
     width: 1.3rem;
     border-radius: 50%;
-    position: absolute;
     background-color: #55c57a;
     opacity: 0;
     transition: opacity .2s;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
@@ -635,9 +635,9 @@ body {
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
   .card__cta {
-    position: absolute;
     width: 90%;
     text-align: center;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
@@ -651,6 +651,50 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .story {
   width: 75%;

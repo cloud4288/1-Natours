@@ -45,12 +45,11 @@
   }
 
   &__list {
-    position: absolute;
     list-style: none;
     text-align: center;
     width: 100%;
 
-    @include center-horizontal-vertical;
+    @include abs-center;
   }
 
   &__item {

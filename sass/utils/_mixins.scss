@@ -11,7 +11,8 @@
     padding-top: 2rem;
 }
 
-@mixin center-horizontal-vertical {
+@mixin abs-center {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
