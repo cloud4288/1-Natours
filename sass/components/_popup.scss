@@ -8,7 +8,7 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &__content {
     width: 75%;
@@ -18,9 +18,9 @@
     display: table;
     overflow: hidden;
     opacity: 0;
-    transform: translate(-50%, -50%) scale(.25);
-    transition: all .5s .2s;
-    
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s;
+
     @include abs-center;
   }
 
@@ -57,6 +57,12 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+      column-gap: 4rem;
+      column-rule: unset;
+    }
   }
 
   // Open states
