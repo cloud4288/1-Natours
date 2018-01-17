@@ -108,6 +108,7 @@
     top: 12rem;
     right: 2rem;
     width: 75%;
+    z-index: 3000;
   }
 
   &__heading-span {
@@ -184,7 +185,8 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
